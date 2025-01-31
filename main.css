@@ -310,7 +310,7 @@ body.light .card{
     margin-top: 10px;
 }
 #inf>.card>.chart>div>p:first-child {
-    min-width: 100px;
+    min-width: 175px;
 }
 
 #jt {
@@ -532,7 +532,7 @@ body.light .card{
     /* width: 100%; */
     padding: 10px 10px;
     margin: 1px;
-    border-radius: 15px;
+    border-radius: 25px;
     transition: 100ms;
     color: var(--text);
     display: flex;
