@@ -179,7 +179,7 @@ body.light .card{
 }
 
 body.light>#ldb{
-	background:url(bg.img)center;
+	/*background:url(bg.img)center;*/
     /*background-image: radial-gradient(circle at 30% 30%,#32ffea30,#00000000 20%),
     radial-gradient(circle at 70% 60%,#ffbf2830,#00000000 25%),
     radial-gradient(circle at 20% 70%,#3da86630,#00000000 25%),
