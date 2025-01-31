@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>William's Site</title>
+    <link rel="stylesheet" href="main.css">
+    <base target="_blank">
+</head>
+
+<body>
+    <script src="jq.min.js"></script>
+    
+    <div id="ldb">
+        <a style="color:#ffffff;position: fixed; bottom: 85px;left: 50px;" class="a jump" href="content-zh-tw.html">Chinese Traditional 繁體中文</a>
+        <a style="color:#ffffff;position: fixed; bottom: 34px;left: 50px;" class="a jump" href="content-zh-cn.html">Chinese Simplified 简体中文</a>
+        <a style="color:#ffffff;position: fixed; bottom: 34px;center;" class="a jump" href="set.html">Set up</a>
+        <!---<a style="color:#ffffff;position: fixed; bottom: 85px;center;" class="a jump" href="2nd_site/index.html">2nd Website</a>--->
+        <p style="color:#fff; position: fixed; bottom:100px; right:25px;">When "Let's start" button shows up,<br>click it to start. 👇</p>
+        <div class="lay 0 show0 show" style="margin: 0;">
+            <p style="font-size: 60px;">Welcome!</p>
+            <p style="font-size: 30px;">Welcome to William's Site</p>
+        </div>
+        <div class="lay 1" style="margin: 0;">
+            <p style="font-size: 20px;text-align: left;">There are three languages available, and you're in English site.<br>You can also click "Set up" to change the language and theme.</p>
+        </div>
+        <div class="lay 2" style="margin: 0;">
+            <p style="font-size: 20px;">A contented mind is a perpetual feast.</p>
+        </div>
+        <div class="lay 3" style="margin: 0;">
+            <p style="font-size: 35px;">The best revenge is massive success.</p>
+        </div>
+        <div class="lay 4" style="margin: 0;">
+            <p style="font-size: 35px;">Go confidently in the direction of your<br>dreams. Live the life you have imagined.</p>
+        </div>
+        <div class="lay 5" style="margin: 0;">
+            <p style="font-size: 35px;">Do something today that your future self<br>will thank you for.</p>
+        </div>
+        <div class="lay 6" style="margin: 0;">
+            <p style="font-size: 35px;">Experience is the best teacher.</p>
+        </div>
+    </div>
+    <a class="a" id="stt" onclick="
+        $('#ldb').hide();
+        document.body.style.overflow='auto';
+        $(this).remove();"><span style="font-size: 30px;">Let's start</span></a>
+    <script>
+let dl=[-1,4,5,6,8,10,12];let nt=4550;
+        setTimeout(() => {
+            $('#ldb>.lay.0').removeClass('show');
+            setTimeout(() => {
+                $('#ldb>.lay.0').removeClass('show0');
+            }, 500);
+        }, nt-530);
+for (let i = 1; i < 7; i++) {
+    nt+=dl[i]*1000;
+    setTimeout(() => {
+        $('#ldb>.lay.'+i).addClass('show0');
+        setTimeout(() => {
+        $('#ldb>.lay.'+i).addClass('show');
+            
+        }, 20);
+        setTimeout(() => {
+            $('#ldb>.lay.'+i).removeClass('show');
+            setTimeout(() => {
+                $('#ldb>.lay.'+i).removeClass('show0');
+            }, 500);
+        }, dl[i]*1000-1000);
+    }, nt-dl[i]*1000);
+}
+    setTimeout(() => {
+        $('#ldb>.lay.l').addClass('show0');
+        setTimeout(() => {
+        $('#ldb>.lay.l').addClass('show');
+            
+        }, 20);
+    }, nt);
+
+document.body.onload=()=>{
+    $('#stt').addClass('show')
+};
+//$('#stt').click()
+
+    </script>
+
+    <div id="hd">
+    	<img src="https://hololive.hololivepro.com/wp-content/uploads/2023/10/Hakos-Baelz_pr-img_01.png">
+        <p style="font-size: 20px;margin: 0 0 0 -20px;color: #fff; writing-mode: tb;text-align: end; text-shadow: #000 2px 0 5px;">William</p>
+    </div>
+    
+    <div id="inf" class="lay">
+        <div class="card">
+            <div class="tit">
+                <p style="font-size: 38px;">Basic information </p>
+            </div>
+            <div class="chart body">
+                <div>
+                    <p>Name</p>
+                    <p>William</p>
+                </div>
+                <div>
+                    <p>Following topic(s)</p>
+                    <p>Vtubers, Computer Hardware</p>
+                </div>
+                <div>
+                    <p>Sex</p>
+                    <p>Male</p>
+                </div>
+                <div>
+                    <p>Gender</p>
+                    <p>Male</p>
+                </div>
+                <div>
+                    <p>Born</p>
+                    <p>Q3'08</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="grt" class="lay">
+        <div style="width: max-content;text-shadow: #000 0 0 20px;">
+        <p style="font-size: 60px;">Welcome!</p>
+        <p style="font-size: 45px;">Welcome to William's personal home page</p>
+        <p style="font-size: 30px;color: #ccc;">Developed and maintained by William</p></div>
+    </div>
+    <!--- 2nd site is under development
+    <div id="exp" class="lay">
+        <p style="font-size: 50px;text-align: center;margin-bottom: 100px;">My projects</p>
+        <div class="card">
+            <div class="body">
+                <p style="margin: 20px 20px 10px 30px;">Some projects (from my second website)</p>
+                <p style="margin: 0 20px 10px 30px;">2</p>
+                <p style="margin: 0 20px 10px 30px;">2</p>
+                <p style="margin: 0 20px 10px 30px;">2</p>
+                <p style="margin: 0 20px 10px 35px;">2</p>
+                <p style="margin: 0 20px 10px 30px;">2</p>
+                <p style="margin: 0 20px 10px 30px;">2</p>
+                <p style="margin: 0 20px 10px 35px;">2</p>
+            </div>
+        </div>
+    </div>
+    --->
+    <div class="lay">
+        <div class="card">
+            <p style="font-size: 40px;" class="tit center"><span class="shine" style="--color:#3a8fe9;--colorshine:#8feaff;--speed:4;">Programming languages</span></p>
+            <div class="body" id="jt">
+                <div><p style="margin: 0;">Scratch</p>
+                    <div><div style="background: #ffab19;width: 96%;height: 100%;border-radius: 20px;"
+                        class="highlight width"></div></div></div>
+                 <div><p style="margin: 0;">Python</p>
+                    <div><div style="background: #2D76A5;width: 76%;height: 100%;border-radius: 20px;"
+                        class="highlight width"></div></div></div>
+                <div><p style="margin: 0;">C++</p>
+                    <div><div style="background: #3A69B5;width: 50%;height: 100%;border-radius: 20px;"
+                        class="highlight width"></div></div></div>
+                <div><p style="margin: 0;">C</p>
+                    <div><div style="background: #690030;width: 49%;height: 100%;border-radius: 20px;"
+                        class="highlight width"></div></div></div>
+                <div><p style="margin: 0;">C#</p>
+                    <div><div style="background: #6D5E00;width: 48%;height: 100%;border-radius: 20px;"
+                        class="highlight width"></div></div></div>
+                <div><p style="margin: 0;">Powershell</p>
+                    <div><div style="background: #0087A3;width: 43%;height: 100%;border-radius: 20px;"
+                        class="highlight width"></div></div></div>
+                <div><p style="margin: 0;">CMD</p>
+                    <div><div style="background: #6B00DD;width: 35%;height: 100%;border-radius: 20px;"
+                        class="highlight width"></div></div></div>
+                <div><p style="margin: 0;">Other</p>
+                    <div><div style="background: #770000;width: 7%;height: 100%;border-radius: 20px;"
+                        class="highlight width"></div></div></div>
+            </div>
+        </div>
+    </div>
+    <div class="lay">
+        <p style="font-size: 50px;text-align: center;margin-bottom: 100px;">Interests and preference</p>
+        <div id="hab">
+            <div class="cd">
+                <span style="text-align: center ;">Coding</span>
+            </div>
+            <div class="cd">
+                <span style="text-align: center ;">Sleeping</span>
+            </div>
+            <div class="cd">
+                <span style="text-align: center ;">PC repair</span>
+            </div>
+            <div class="cd">
+                <span style="text-align: center ;">Doing homework</span>
+            </div>
+            <div class="cd">
+                <span style="text-align: center ;">Music</span>
+            </div>
+			<div class="cd">
+                <span style="text-align: center ;">Piano</span>
+            </div>
+			<div class="cd">
+                <span style="text-align: center ;">VTubers</span>
+            </div>
+        </div>
+    </div>
+    <div class="lay">
+        <div class="card">
+            <p style="font-size: 40px;" class="tit center"><span class="shine" style="--color:#3a8fe9;--colorshine:#8feaff;--speed:4;">Vtuber groups I most followed</span></p>
+            <div class="body" id="jt">
+                <div><p style="margin: 0;">hololive</p>
+                    <div><div style="background: #00DAFF;width: 96%;height: 100%;border-radius: 10px;"
+                        class="highlight width"></div></div></div><hr>
+                <div><p style="margin: 0;">NIJISANJI</p>
+                    <div><div style="background: #aaaaaa;width: 21%;height: 100%;border-radius: 10px;"
+                        class="highlight width"></div></div></div><hr>
+                <div><p style="margin: 0;">Youtubeuse virtuelle personelle</p>
+                    <div><div style="background: #64047f;width: 6%;height: 100%;border-radius: 10px;"
+                        class="highlight width"></div></div></div><hr>
+                <div><p style="margin: 0;">Vspo!</p>
+                    <div><div style="background: #a2e0ff;width: 5%;height: 100%;border-radius: 10px;"
+                        class="highlight width"></div></div></div><hr>
+                <div><p style="margin: 0;">Other</p>
+                    <div><div style="background: #3e6dbf;width: 3%;height: 100%;border-radius: 10px;"
+                        class="highlight width"></div></div></div>
+            </div>
+        </div>
+    </div>
+    <div class="lay">
+        <div style="width: max-content;text-shadow: #000 0 0 20px;">
+        <p style="font-size: 50px;">VTubers I followed</p>
+        <p style="font-size: 18px;">Some VTubers I followed</p>
+    </div></div>
+    <!---Amane Kanata--->
+    <div class="lay">
+        <div class="card prj marine">
+            <p class="tit">Amane Kanata</p>
+            <div class="body">
+                <span>YouTube: 1.58M subscribers</span>
+				<span>X: 1.4M followers</span>
+                <p>An angel from the Celestial Academy. She is cheerful in front of close friends but becomes quiet and introverted when in crowds. She stays at home on her days off. She works hard with the goal of holding a concert at Saitama Super Arena someday.<p>
+                <div class="ops">
+                <a href="https://hololive.hololivepro.com/en/talents/amane-kanata/" class="a">Présentation officielle (anglais)</a>
+                <a href="https://hololive.hololivepro.com/talents/amane-kanata/" class="a">Présentation officielle (japonais)</a>
+                <a href="https://3d.nicovideo.jp/works/td78501" class="a">MMD</a>
+                <a href="https://hololive.hololivepro.com/en/special/2127/" class="a">hololy</a>
+				<a href="https://www.youtube.com/channel/UCZlDXzGoo7d44bwdNObFacg" class="a">YouTube</a>
+				<a href="https://x.com/amanekanatach" class="a">X</a></div>
+            </div>
+        </div>
+    </div>
+    <!---Tsunomaki Watame--->
+    <div class="lay">
+        <div class="card prj marine">
+            <p class="tit">Tsunomaki Watame</p>
+            <div class="body">
+                <span>YouTube: 1.62M subscribers</span>
+				<span>X: 1.1M followers</span>
+                <p>Loves singing, and as she continued uploading song covers and having weekly singing streams titled "Watameh Night Fever!!," she started wanting to stand on Tokyo Budokan's stage someday.</p>
+				<p>Hint: Make sure you've checked out her Tsunomaki Rock Paper Scissors videos as well!</p>
+                <div class="ops">
+                <a href="https://hololive.hololivepro.com/en/talents/tsunomaki-watame/" class="a">Présentation officielle (anglais)</a>
+                <a href="https://hololive.hololivepro.com/talents/tsunomaki-watame/" class="a">Présentation officielle (japonais)</a>
+                <a href="https://3d.nicovideo.jp/works/td78502" class="a">MMD</a>
+                <a href="https://hololive.hololivepro.com/en/special/2127/" class="a">hololy</a>
+                <a href="https://www.youtube.com/channel/UCqm3BQLlJfvkTsX_hvm0UmA" class="a">YouTube</a>
+                <a href="https://x.com/tsunomakiwatame" class="a">X</a></div>
+            </div>
+        </div>
+    </div>
+    <!---FUWAMOCO--->
+    <div class="lay">
+        <div class="card prj fwmc">
+            <p class="tit">FUWAMOCO</p>
+            
+            <p class="subtit">Fuwawa Abyssgard</p>
+            <p class="subtit">Mococo Abyssgard</p>
+            
+            <div class="body">
+                <span>Youtube: 1.08M subscribers</span>
+                <span>X: 470.4K followers</span>
+                <p>Fuwawa Abyssgard</p><p>The fluffy older twin sister of The Demonic Guard Dogs,who were sealed away in The Cell for being a pain in the godly behind, Fuwawa Abyssgard is "The Fluffy One." Her duty is to calmly look after her younger twin sister Mococo and their pet Pero, but that calmness can be short-lived. Ultimately, she is a bouncy and boisterous girl who loves to chat and play.</p>
+                <p>Mococo Abyssgard</p><p>The fuzzy younger twin sister of The Demonic Guard Dogs, who were sealed away in The Cell for being a pain in the godly behind, Mococo Abyssgard is "The Fuzzy One." The rambunctious Mococo spent all her time imprisoned watching anime and playing games, often roping her older twin sister Fuwawa and their pet Pero in for more chaotic antics. It's rumored that she took part in the prison break just for the heck of it.</p>
+                <div class="ops table">
+                <a href="https://hololive.hololivepro.com/en/talents/fuwawa-abyssgard/" class="a">Présentation officielle de Fuwawa Abyssgard (anglais)</a>
+                <a href="https://hololive.hololivepro.com/talents/fuwawa-abyssgard/" class="a">Présentation officielle de Fuwawa Abyssgard (japonais)</a>
+                <a href="https://hololive.hololivepro.com/en/talents/mococo-abyssgard/" class="a">Présentation officielle de Mococo Abyssgard (anglais)</a>
+                <a href="https://hololive.hololivepro.com/talents/mococo-abyssgard/" class="a">Présentation officielle de Mococo Abyssgard (japonais)</a>
+                <a href="https://youtube.com/@FUWAMOCOch" class="a">YouTube</a>
+                <a href="https://x.com/fuwamoco_en" class="a">X</a></div>
+            </div>
+        </div>
+    </div>
+    <!---Inugami Korone--->
+    <div class="lay">
+        <div class="card prj korone">
+            <p class="tit">Inugami Korone</p>
+            <div class="body">
+                <span>YouTube: 2.18M subscribers</span>
+                <span>X: 1.4M followers</span>
+                <p>A dog from a bakery in the city. She likes to play games during her free time while watchdogging.</p>
+                <div class="ops">
+                <a href="https://hololive.hololivepro.com/en/talents/inugami-korone/" class="a">Présentation officielle (anglais)</a>
+                <a href="https://hololive.hololivepro.com/talents/inugami-korone/" class="a">Présentation officielle (japonais)</a>
+                <a href="https://3d.nicovideo.jp/works/td63650" class="a">MMD</a>
+                <a href="https://www.youtube.com/channel/UChAnqc_AY5_I3Px5dig3X1Q" class="a">YouTube</a>
+                <a href="https://x.com/inugamikorone" class="a">X</a></div>
+            </div>
+        </div>
+    </div>
+    <!---Shirogane Noel--->
+    <div class="lay">
+        <div class="card prj noel">
+            <p class="tit">Shirogane Noel</p>
+            <div class="body">
+                <span>YouTube: 1.98M subscribers</span>
+                <span>X: 1.7M subscribers</span>
+                <p>As much as this fluffy, meatheaded knight may be easy-going, she has the dangerous habit of attempting to muscle her way through her problems. Hungering for power, she came to train to the VTuber world where all the stronk people are.</p>
+                <div class="ops">
+                <a href="https://hololive.hololivepro.com/en/talents/shirogane-noel/" class="a">Présentation officielle (anglais)</a>
+                <a href="https://hololive.hololivepro.com/talents/shirogane-noel/" class="a">Présentation officielle (japonais)</a>
+                <a href="https://www.youtube.com/channel/UCdyqAaZDKHXg4Ahi7VENThQ" class="a">YouTube</a>
+                <a href="https://x.com/shiroganenoel" class="a">X</a></div>
+            </div>
+        </div>
+    </div>
+    <!---Shirakami Fubuki--->
+    <div class="lay">
+        <div class="card prj fubuki">
+            <p class="tit">Shirakami Fubuki</p>
+            <div class="body">
+                <span>YouTube: 2.51M subscribers</span>
+                <span>X: 1.8M followers</span>
+                <p>White-haired animal-eared otaku fox. She loves talking with people and will be happy if you give her the time of day. She aims to become a top otaku idol while enjoying each and every day.</p>
+                <div class="ops">
+                <a href="https://hololive.hololivepro.com/en/talents/shirakami-fubuki/" class="a">Présentation officielle (anglais)</a>
+                <a href="https://hololive.hololivepro.com/talents/shirakami-fubuki/" class="a">Présentation officielle (japonais)</a>
+                <a href="https://fbkingdom.hololivepro.com/live/" class="a">白上フブキ1stソロライブ<br>FBKINGDOM “ANTHEM”</a>
+                <a href="https://www.youtube.com/channel/UCdn5BQ06XqgXoAxIhbqw5Rg" class="a">YouTube</a>
+                <a href="https://x.com/shirakamifubuki" class="a">X</a></div>
+            </div>
+        </div>
+    </div>
+    <!---Houshou Marine--->
+    <div class="lay">
+        <div class="card prj marine">
+            <p class="tit">Houshou Marine</p>
+            <div class="body">
+                <span>YouTube: 3.77M subscribers</span>
+                <span>X: 1.9M followers</span>
+                <p>Loves jewels, treasure, and money. Her dream is to become a pirate and go treasure hunting. In order to get a pirate ship, she is now stacking up money as a VTuber on the great lands, just like how the other land-lovers do (which also means she is currently just a girl cosplayer). She acts like a big sis and sometimes seduces people like a succubus does. A sensual, femme fatale boss, and a young one, at that! (Around 17)<br>Her pirate outfit is just cosplay, and quite lewd when you see it that way.</p>
+                <div class="ops">
+                <a href="https://hololive.hololivepro.com/en/talents/houshou-marine/" class="a">Présentation officielle (anglais)</a>
+                <a href="https://hololive.hololivepro.com/talents/houshou-marine/" class="a">Présentation officielle (japonais)</a>
+                <a href="https://hololive.hololivepro.com/en/special/2127/" class="a">hololy</a>
+                <a href="https://3d.nicovideo.jp/works/td78500" class="a">MMD</a>
+                <a href="https://www.youtube.com/channel/UCCzUftO8KOVkV4wQG1vkUvg" class="a">YouTube</a>
+                <a href="https://x.com/houshoumarine" class="a">X</a></div>
+            </div>
+        </div>
+    </div>
+    <!---Usada Pekora--->
+    <div class="lay">
+        <div class="card prj peko">
+            <p class="tit">Usada Pekora</p>
+            <div class="body">
+                <span>YouTube: 2.67M subscribers</span>
+                <span>X: 1.7M followers</span>
+                <p>A lonely rabbit-eared girl who loves carrots. She loves them so much that she always brings a few anywhere she goes.</p>
+                <div class="ops">
+                <a href="https://hololive.hololivepro.com/en/talents/usada-pekora/" class="a">Présentation officielle (anglais)</a>
+                <a href="https://hololive.hololivepro.com/talents/usada-pekora/" class="a">Présentation officielle (japonais)</a>
+                <a href="https://www.twitch.tv/usadapekora_hololive" class="a">Twitch</a>
+                <a href="https://3d.nicovideo.jp/works/td88332" class="a">MMD</a>
+                <a href="https://rabbit-plan.hololivepro.com/en/" class="a">Human Rabbitality Project (anglais)</a>
+                <a href="https://rabbit-plan.hololivepro.com/" class="a">Human Rabbitality Project (japonais)</a>
+                <a href="https://www.youtube.com/channel/UC1DCedRgGHBdm81E1llLhOQ" class="a">YouTube</a>
+                <a href="https://x.com/usadapekora" class="a">X</a></div>
+            </div>
+        </div>
+    </div>
+    <!---Sakura Miko--->
+    <div class="lay">
+        <div class="card prj">
+            <p class="tit">Sakura Miko</p>
+            <div class="body">
+                <span>YouTube: 2.29M subscribers</span>
+                <span>X: 1.6M subscribers</span>
+                <p>A shrine maiden from the Virtual Sakura Shrine. With a vivid admiration for idols, she constantly pushes herself to greater heights to become a top elite shrine maiden-idol like no other!<br>Well... a self-proclaimed 'elite,' to be exact. Fans would think "clutz" fits her better...</p>
+                <div class="ops table">
+                <a href="https://hololive.hololivepro.com/en/talents/sakuramiko/" class="a">Présentation officielle (anglais)</a>
+                <a href="https://hololive.hololivepro.com/talents/sakuramiko/" class="a">Présentation officielle (japonais)</a>
+                <a href="https://www.twitch.tv/sakuramiko_hololive" class="a">Twitch</a>
+                <a href="https://www.tiktok.com/@sakuramiko_hololive" class="a">TikTok</a>
+                <a href="https://youtube.com/playlist?list=PLMF8NocLqJttJCIiUCkNXx6jW4dAYfz5G&si=g2i8rWGyqBy61a9x" class="a">Song Playlist</a>
+                <a href="https://3d.nicovideo.jp/works/td74928" class="a">MMD</a>
+                <a href="https://3d.nicovideo.jp/works/td74930" class="a">MMD (2)</a>
+                <a href="https://hololive.hololivepro.com/en/special/2127/" class="a">hololy</a>
+                <a href="https://www.youtube.com/channel/UC-hM6YJuNYVAmUWxeIr9FeA" class="a">YouTube</a>
+                <a href="https://twitter.com/sakuramiko35" class="a">X</a></div>
+            </div>
+        </div>
+    </div>
+    <!---Juufuutei Raden--->
+    <div class="lay">
+        <div class="card prj">
+            <p class="tit">Juufuutei Raden</p>
+            <div class="body">
+                <span>YouTube: 1.02M subscribers</span>
+                <span>X: 409.7K followers</span>
+                <p>A grandma's girl who covers herself in both tradition and revolution, and sees big dreams in the rakugo world. She loves arts and culture of all kinds—new and old, Eastern and Western. She visits museums so often that she is left penny-pinching the rest of the time. It is most certainly not due to her frequent purchases of alcohol. Through her encounter with rakugo, she has come to enjoy public speaking more than ever, and she is fervishly writing up her own skits.</p>
+                <div class="ops">
+                <a href="https://hololive.hololivepro.com/en/talents/juufuutei-raden/" class="a">Présentation officielle (anglais)</a>
+                <a href="https://hololive.hololivepro.com/talents/juufuutei-raden/" class="a">Présentation officielle (japonais)</a>
+                <a href="https://www.youtube.com/@JuufuuteiRaden" class="a">YouTube</a>
+                <a href="https://x.com/juufuuteiraden" class="a">X</a></div>
+            </div>
+        </div>
+    </div>
+    <!---Kobo Kanaeru--->
+    <div class="lay">
+        <div class="card prj">
+            <p class="tit">Kobo Kanaeru</p>
+            <div class="body">
+                <span>YouTube: 2.63M subscribers</span>
+                <span>X: 645.2K followers</span>
+                <p>A carefree girl who lives in the topmost room of a lighthouse, she is actually the bloodline of the strongest rain shaman in the area. She has great potential to control rain, but she does not like to do it as a task. In order to win back her Rain Master title, she needs to prove to her family that she can keep their rain shaman service afloat. Not only does she have to train daily, but she also needs to adopt some sort of virtual marketing strategy to succeed!</p>
+                <div class="ops">
+                <a href="https://hololive.hololivepro.com/en/talents/kobo-kanaeru/" class="a">Présentation officielle (anglais)</a>
+                <a href="https://hololive.hololivepro.com/talents/kobo-kanaeru/" class="a">Présentation officielle (japonais)</a>
+                <a href="https://www.youtube.com/channel/UCjLEmnpCNeisMxy134KPwWw" class="a">YouTube</a>
+                <a href="https://x.com/kobokanaeru" class="a">X</a></div>
+            </div>
+        </div>
+    </div>
+    <!---Vtubers End--->
+    <!---Vtubers groups start--->
+    <div class="lay">
+        <div style="width: max-content;text-shadow: #000 0 0 20px;">
+        <p style="font-size: 50px;">VTubers Groups</p>
+        <!---
+        <p style="font-size: 18px;">Some VTubers I followed (or I liked the most)</p>
+        --->
+    </div></div>
+    <!---hololive--->
+    <div class="lay">
+        <div class="card prj hololive">
+            <p class="tit">hololive ホロライブ</p>
+            <div class="body">
+            	<!---
+                <span></span>
+                <span></span>
+                --->
+                <p class="tit">À propos</p>
+                <p>hololive production is a VTuber management group that consists of the talent groups hololive and HOLOSTARS. hololive production has over 80 affiliated talents active in Japan, Indonesia, and English-speaking countries, and has over 80 million YouTuber subscribers all across the channels.</p>
+                <div class="ops hololive">
+                <a href="https://cover-corp.com/" class="a">À propos de l'enterprise</a>
+                <a href="https://hololivepro.com/" class="a">Site officiel du hololive production</a>
+                <a href="https://hololive.hololivepro.com/" class="a">Site officiel du hololive (japonais)</a>
+                <a href="https://hololive.hololivepro.com/en" class="a">Site officiel du hololive (anglais)</a>
+                <a href="https://holostars.hololivepro.com/" class="a">Site officiel du holostars (japonais)</a>
+                <a href="https://holostars.hololivepro.com/en" class="a">Site officiel du holostars (anglais)</a>
+                <a href="https://shop.hololivepro.com/" class="a">Store officiel du hololive production</a>
+                <a href="https://holowitches.hololivepro.com/" class="a">Page d'accueil du Magical Girl holoWitches!</a>
+                <a href="https://supernova.hololivepro.com/" class="a">Jeux card de officielle hololive</a>
+                <a href="https://schedule.hololive.tv/" class="a">Calendrier de diffusion de en direct</a>
+                <a href="https://hololivesuperexpo2025.hololivepro.com/" class="a">Site officiel de hololive Super EXPO 2025</a>
+                <a href="https://hololivepro.com/about" class="a">À propos de hololive production</a>
+                <a href="https://hololivepro.com/#top_talent" class="a">Talents de hololive</a>
+                <a href="https://hololivepro.com/news" class="a">Nouvelles de hololive</a>
+                <a href="https://ccmc-corp.com/holoindie" class="a">holo Indie</a>
+                <a href="https://www.holoplus.com/" class="a">L'application holoplus</a>
+                <a href="https://hololivemeet.hololivepro.com/" class="a">hololive Meet</a>
+                <a href="https://holoearth.com/" class="a">HOLOEARTH</a>
+                <a href="https://alt.hololive.tv/en/" class="a">HOLOLIVE ALTERNATIVE</a></div>
+                <div class="link">
+                <p class="holo">hololive</p>
+                <a style="color:#08f;"href="https://www.youtube.com/channel/UCJFZiqLMntJufDCHc6bQixg" class="a">YouTube</a>
+                <a style="color:#08f;"href="https://x.com/hololivetv" class="a">X</a>
+                <a style="color:#08f;"href="https://www.tiktok.com/@hololive_official" class="a">TikTok</a>
+                <p class="holo">hololive Indonesia</p>
+                <a style="color:#08f;"href="https://www.youtube.com/channel/UCfrWoRGlawPQDQxxeIDRP0Q" class="a">YouTube</a>
+                <a style="color:#08f;"href="https://x.com/hololive_Id" class="a">X</a>
+                <a style="color:#08f;"href="https://www.facebook.com/people/Hololive-Indonesia/100063546336394/" class="a">Facebook</a>
+                <a style="color:#08f;"href="https://www.tiktok.com/@hololiveid_official" class="a">TikTok</a>
+                <a style="color:#08f;"href="https://www.instagram.com/hololiveid_official/" class="a">Instagram</a>
+                <p class="holo">hololive English</p>
+                <a style="color:#08f;"href="https://www.youtube.com/channel/UCotXwY6s8pWmuWd_snKYjhg" class="a">YouTube</a>
+                <a style="color:#08f;"href="https://x.com/hololive_En" class="a">X</a>
+                <a style="color:#08f;"href="https://www.facebook.com/hololivetv" class="a">Facebook</a>
+                <a style="color:#08f;"href="https://www.tiktok.com/@hololive_english" class="a">Tiktok</a>
+                <a style="color:#08f;"href="https://www.reddit.com/r/Hololive/" class="a">Reddit</a>
+                <p class="holo">hololive DEV_IS</p>
+                <a style="color:#08f;"href="https://www.youtube.com/@hololiveDEV_IS" class="a">YouTube</a>
+                <p class="holo">HOLOSTARS</p>
+                <a style="color:#08f;"href="https://www.youtube.com/channel/UCWsfcksUUpoEvhia0_ut0bA" class="a">YouTube</a>
+                <a style="color:#08f;"href="https://x.com/holostarstv" class="a">X</a>
+                <p class="holo">HOLOSTARS English</p>
+                <a style="color:#08f;"href="https://www.youtube.com/channel/UCJxZpzx4wHzEYD-eCiZPikg" class="a">YouTube</a>
+                <a style="color:#08f;"href="https://x.com/hololivepro_EN" class="a">X</a>
+                <a style="color:#08f;"href="https://www.tiktok.com/@holostars_english" class="a">TikTok</a><br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---nijisanji--->
+    <div class="lay">
+        <div class="card prj">
+            <p class="tit">NIJISANJI にじさんじ</p>
+            <div class="body">
+            	<!---
+                <span></span>
+                <span></span>
+                --->
+                <p>NIJISANJI Project (にじさんじプロジェクト), colloquially known as just NIJISANJI, is an agency of primarily 2D Virtual YouTubers who are also known as "Virtual Livers" (バーチャルライバー) due to posting on sites outside of YouTube, such as NicoNico, Twitch and Bilibili. <a style="color:#0af;"href="https://virtualyoutuber.fandom.com/wiki/NIJISANJI" class="a">Full introduction</a></p>
+                <div class="ops nijisanji">
+                <a href="" class="a"></a>
+                <a href="" class="a"></a></div>
+            </div>
+        </div>
+    </div>
+    <!---Vtubers groups End--->
+    <!---End-Contact--->
+    <div class="lay">
+        <p style="font-size: 50px;text-align: center;margin-bottom: 100px;">Contact</p>
+        <div class="card">
+            <div class="body" style="padding: 20px 30px;font-size: 15px;">
+            	<p>GitHub<a href="https://github.com/wu375378" class="a jump"> Ouvrir maintenant</a></p>
+                <p>X<a href="https://x.com/shuen_ch" class="a jump"> Ouvrir maintenant</a></p>
+                <p>YouTube<a href="https://www.youtube.com/@william2ndchen0824" class="a jump"> Ouvrir maintenant</a></p>
+                <p>Youtube 2nd channel: <a href="youtube.html" class="a jump">Some questions are required before getting it</a></p>
+            </div>
+        </div>
+    </div>
+    <div class="lay" id="ft" style="user-select: none;">
+        <div style="display: flex;flex-direction: column;flex-grow: 1;align-items: center;justify-content: center;">
+        <img src="https://hololive.hololivepro.com/wp-content/uploads/2023/10/Hakos-Baelz_pr-img_01.png">
+        <p style="margin-top: 10px;color: #aaa;">Janvier 2025</p>
+        <div style="margin-top: 20px;">
+        	<p style="font-size: 20px;">She is Hakos Baelz, an English speaking virtual YouTuber associated with hololive. <a href="https://hololive.hololivepro.com/en/talents/hakos-baelz/" class="a jump">Présentation de Hakos Baelz (anglais)</a></p>
+            <p style="font-size: 20px;">Background from Microsoft Edge	<a href="http://www.microsoft.com/en-us/edge" class="a jump">Télécharger maintenant</a></p>
+        </div></div>
+        <p style="font-size: 18px;color: #555;margin-bottom: 5px;">Copyright ©2025 William. All rights reserved.</p>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
