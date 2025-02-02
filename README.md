@@ -9,6 +9,7 @@
 My homepage is on [wu375378.github.io](https://wu375378.github.io)
 
 My YouTube is [William2ndchen0824](https://www.youtube.com/@william2ndchen0824)
+>Subscribe!
 
 My X is [Shuen_Ch](https://x.com/shuen_ch)
 >Sign in before accessing it
