@@ -486,6 +486,13 @@ body.light .card{
     width: fit-content;
 }
 
+.ops.nijisanji {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    width: fit-content;
+}
+
 .links{
 	display:grid;
 	grid-template-columns: repeat(5, 1fr);
@@ -554,6 +561,10 @@ body.light .card{
     opacity: 0.6;
 }
 
-#ft {
+#fubuki {
     backdrop-filter: blur(25px);
+}
+
+#kanata {
+    backdrop-filter: blur(15px);
 }
