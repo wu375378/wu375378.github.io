@@ -4,6 +4,7 @@
 
 body {
     /* padding: 0 0 500px; */
+    font-family: Comic Sans MS,Helvetica Neue,Microsoft Yahei,-apple-system,sans-serif!important;
     padding: 0;
     margin: 0;
     background: url(bg.img) center;
@@ -47,7 +48,7 @@ p {
 
 
 ::-webkit-scrollbar {
-    width: 14px;
+    width: 5px;
 }
 
 ::-webkit-scrollbar:hover {
@@ -213,6 +214,7 @@ body.light>#ldb .lay{
 }
 
 .lay{
+	font-family: Comic Sans MS,Helvetica Neue,Microsoft Yahei,-apple-system,sans-serif;
     height: 100vh;
     align-items: center;
     justify-content: center;
@@ -450,8 +452,8 @@ body.light .card{
 
 .card.prj.peko{
     width: 50%;
-    min-width: 900px;
-    max-width: 1200px;
+    min-width: 600px;
+    max-width: 900px;
 }
 
 .card.prj.hololive{
@@ -487,6 +489,13 @@ body.light .card{
 }
 
 .ops.nijisanji {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    width: fit-content;
+}
+
+.ops.peko {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
