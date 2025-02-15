@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_レイヤー_2" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 857.3 989.6">
+  <!-- Generator: Adobe Illustrator 29.0.0, SVG Export Plug-In . SVG Version: 2.1.0 Build 186)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: none;
+        stroke: #133639;
+        stroke-miterlimit: 10;
+        stroke-width: .5px;
+      }
+    </style>
+  </defs>
+  <g id="_レイヤー_2-2">
+    <g>
+      <g>
+        <g>
+          <polygon class="st0" points="428.6 494.8 359.5 375.1 428.6 0 428.6 494.8"/>
+          <polygon class="st0" points="428.6 494.8 497.7 375.1 428.6 0 428.6 494.8"/>
+        </g>
+        <g>
+          <polygon class="st0" points="428.6 494.8 290.5 494.8 .2 247.4 428.6 494.8"/>
+          <polygon class="st0" points="428.6 494.8 359.5 375.1 .2 247.4 428.6 494.8"/>
+        </g>
+        <g>
+          <polygon class="st0" points="428.6 494.8 359.5 614.5 .2 742.2 428.6 494.8"/>
+          <polygon class="st0" points="428.6 494.8 290.5 494.8 .2 742.2 428.6 494.8"/>
+        </g>
+        <g>
+          <polygon class="st0" points="428.6 494.8 497.7 614.5 428.6 989.6 428.6 494.8"/>
+          <polygon class="st0" points="428.6 494.8 359.5 614.5 428.6 989.6 428.6 494.8"/>
+        </g>
+        <g>
+          <polygon class="st0" points="428.6 494.8 566.8 494.8 857.1 742.2 428.6 494.8"/>
+          <polygon class="st0" points="428.6 494.8 497.7 614.5 857.1 742.2 428.6 494.8"/>
+        </g>
+        <g>
+          <polygon class="st0" points="428.6 494.8 497.7 375.1 857.1 247.4 428.6 494.8"/>
+          <polygon class="st0" points="428.6 494.8 566.8 494.8 857.1 247.4 428.6 494.8"/>
+        </g>
+      </g>
+      <g>
+        <polygon class="st0" points="257 466.3 102.2 494.8 257 523.3 290.5 494.8 257 466.3"/>
+        <polygon class="st0" points="497.7 375.1 539.2 360.4 591.8 212.1 489.8 331.9 497.7 375.1"/>
+        <polygon class="st0" points="600.3 523.3 755 494.8 600.3 466.3 566.8 494.8 600.3 523.3"/>
+        <polygon class="st0" points="359.5 375.1 367.5 331.9 265.4 212.1 318.1 360.4 359.5 375.1"/>
+        <polygon class="st0" points="497.7 614.5 489.8 657.7 591.8 777.5 539.2 629.2 497.7 614.5"/>
+        <polygon class="st0" points="359.5 614.5 318.1 629.2 265.4 777.5 367.5 657.7 359.5 614.5"/>
+      </g>
+      <line class="st0" x1="591.8" y1="212.1" x2="497.7" y2="375.1"/>
+      <line class="st0" x1="265.4" y1="212.1" x2="359.5" y2="375.1"/>
+      <line class="st0" x1="102.2" y1="494.8" x2="290.5" y2="494.8"/>
+      <line class="st0" x1="265.4" y1="777.5" x2="359.5" y2="614.5"/>
+      <line class="st0" x1="591.8" y1="777.5" x2="497.7" y2="614.5"/>
+      <line class="st0" x1="566.8" y1="494.8" x2="755" y2="494.8"/>
+    </g>
+  </g>
+</svg>
