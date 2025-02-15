@@ -12,6 +12,28 @@ z-index:1
     flex-grow: 1;
 }
 
+.button-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    margin-bottom: 20px;
+  }
+  .button {
+    background-color: #997f00;
+    color: #FFEBAF;
+    border: none;
+    padding: 20px;
+    width: 150px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+  }
+
 #fv .logo_layer{
 position:absolute;
 z-index:2;
@@ -29,21 +51,6 @@ align-items:flex-end;
 padding-bottom:4dvh;
 pointer-events:none
 }
-
-.button {
-    background-color: #EAC800;
-    color: #008C77;
-    border: none;
-    padding: 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 0px;
-    transition: background-color 0.3s;
-  }
 
 #fv .logo_layer .logo{
 position:sticky;
@@ -853,7 +860,6 @@ position:relative;
 display:block;
 width:100%;
 height:auto
-gap: 10px;
 }
 
 .cmn_album_flex.type_top .text_area .text_box{
