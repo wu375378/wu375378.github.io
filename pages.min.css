@@ -30,6 +30,21 @@ padding-bottom:4dvh;
 pointer-events:none
 }
 
+.button {
+    background-color: #EAC800;
+    color: #008C77;
+    border: none;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 0px;
+    transition: background-color 0.3s;
+  }
+
 #fv .logo_layer .logo{
 position:sticky;
 bottom:4dvh;
@@ -838,6 +853,7 @@ position:relative;
 display:block;
 width:100%;
 height:auto
+gap: 10px;
 }
 
 .cmn_album_flex.type_top .text_area .text_box{
