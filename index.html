@@ -28,7 +28,7 @@
 	    <!-- ▼ Favicon ▼-->
     <link rel="shortcut icon" href="https://hololivesuperexpo.hololivepro.com/wp-content/themes/hololive_super_expo_2022/images/favicon.ico">
     <!-- ▼ iPhone Title ▼-->
-    <meta name="apple-mobile-web-app-title" content="hololive SUPER EXPO 2022 &amp; hololive 3rd fes. Link Your Wish Supported By ヴァイスシュヴァルツ">
+    <meta name="apple-mobile-web-app-title" content="William's Homepage">
 
     <!-- ▼ CSS Load ▼-->
 	<link href="homepage/reset.css" rel="stylesheet" type="text/css" media="all">
@@ -330,7 +330,7 @@
 		<a href="https://github.com/wu375378" target="_blank">GitHub</a>
 		<a href="https://wu375378.github.io/youtube.html" target="_blank">YouTube 2nd Channel</a>
 	</div>
-	<p class="copywrite">Copyright © 2025 William. Tous droits réservés.</p>
+	<p class="copywrite">Copyright © 2025 William. All rights reserved.</p>
 </div>
 
 </footer>
@@ -350,13 +350,13 @@
 	var webStorage = function(){
   var $loading = $('.op_anim_top');
   
-  if(sessionStorage.getItem('access')){//一度読み込んでいた場合の処理
+  if(sessionStorage.getItem('access')){
     $loading.removeClass('is_active');
     $('#fv').addClass('active');
     setTimeout(function(){
       $loading.addClass('open');
     },1000);
-  } else { //最初にページを訪れた場合の処理
+  } else {
     $loading.addClass('is_active');
     sessionStorage.setItem('access', 0);
     $(window).on('load', function(){
