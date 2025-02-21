@@ -900,6 +900,7 @@
   gap: clamp(60px, 8vw, 120px);
   margin: 0 auto 120px;
   max-width: 1540px;
+  border-radius: 20px;
 }
 #news .text_block {
   width: max(30%, 300px);
@@ -950,6 +951,7 @@
   position: relative;
   transition: 0.3s;
   height: 100%;
+  /* border-radius: 25px; */
 }
 .news .news_link:before {
   position: absolute;
@@ -987,7 +989,7 @@
 .single {
   background: #fff;
   padding: 30px 30px;
-  border-radius: 8px;
+  border-radius: 20px;
   margin-bottom: 60px;
 }
 .single .news_title_block {
@@ -1143,6 +1145,7 @@
   .news .news_link .info_block {
     gap: 10px;
     margin-bottom: 5px;
+    border-radius: 35px;
   }
   .news .news_link .info_block .date {
     font-size: 14px;
@@ -1195,7 +1198,7 @@
   display: block;
   transition: 0.3s;
   position: relative;
-  border-radius: 4px;
+  border-radius: 20px;
 }
 .link_wrap .link_block:before {
   position: absolute;
@@ -1461,7 +1464,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 3;
-  border-radius: 20px;
+  border-radius: 50px;
   opacity: 0.8;
   transition: 0.3s;
 }
@@ -1493,7 +1496,7 @@
 }
 #videos .videos_swiper .swiper-slide .video .video_frame {
   border: 3px solid var(--dark_c);
-  border-radius: 20px;
+  border-radius: 50px;
   overflow: hidden;
   position: relative;
   margin-bottom: 20px;
@@ -1642,7 +1645,7 @@
   background: transparent;
   border: 1px solid #1EAAB1;
   opacity: 1;
-  border-radius: 2px;
+  border-radius: 5px;
   transform: rotate(45deg);
   background: #1EAAB1;
 }
@@ -1825,7 +1828,7 @@
 }
 #in_videos .video .content {
   border: 3px solid var(--dark_c);
-  border-radius: 10px;
+  border-radius:25px;
   overflow: hidden;
   margin-bottom: 0.3em;
   position: relative;
@@ -2205,7 +2208,7 @@
 
 .cmn_block {
   padding: 0px;
-  border-radius: 4px;
+  border-radius: 10px;
   margin-bottom: 30px;
   position: relative;
   --clip_radius:22px;
@@ -3574,7 +3577,7 @@
   height: auto;
   background-color: #fff;
   border: 2px solid var(--fes_02_c);
-  border-radius: 8px;
+  border-radius: 20px;
   padding: calc(var(--main_gap) * 1);
 }
 #in_cast .fes_cast_list .right .cast_grid_outer .cast_grid {
