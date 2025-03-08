@@ -6,11 +6,11 @@
 # navigation
 =============================================== */
 :root {
-  --key_c: #49D7DB;
+  --key_c: #93C0FF;
   --light_c:#DCF4F4;
-  --dark_c:#30C2C6;
-  --shadow_c:#0AA4A8;
-  --shadow_c_light:#30E6EB;
+  --dark_c:#00AAFF;
+  --shadow_c:#80A4FF;
+  --shadow_c_light:#B4BDFF;
   --expo_c:#005FBE;
   --expo_c_dark:#002A55;
   --expo_c_light:#76BAFF;
@@ -22,14 +22,14 @@
   --fes_02_c_light:#FFC4C3;
   --fes_03_c:#FF945C;
   --fes_03_c_dark:#B9855C;
-  --fes_03_c_light:#FFC4C3;
+  --fes_03_c_light:#FFBBBB;
   --ac_c: #C8C11C;
   --button-color:#000;
   --button-text-color:#fff;
-  --bg_color:#92F2F2;
+  --bg_color:#8888FF;
   --txt_color:#15476D;
   --header_bg_color:transparent;
-  --grad_c: linear-gradient(180deg, rgba(91,144,254,1) 0%, rgba(81,211,216,1) 100%);
+  --grad_c: linear-gradient(180deg, rgba(91,144,254,1) 0%, rgba(224,198,255,1) 100%);
   --flex-gap:30px;
   --ham_menu_size:35px;
   --mediaquery_w:768px;
