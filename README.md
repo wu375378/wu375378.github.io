@@ -7,4 +7,4 @@ My homepage is on [wu375378.github.io](https://wu375378.github.io)
 >2nd Site: [liu384385.githib.io](https://liu384385.github.io)
 
 
-### I'm sorry that Chinese Simplified page is out of maintenance
+### Note: Chinese Simplified is no longer maintained as of 2 May 2025
