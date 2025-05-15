@@ -8,3 +8,7 @@ My homepage is on [wu375378.github.io](https://wu375378.github.io)
 
 
 ### Note: Chinese Simplified page is no longer maintained as of 2 May 2025
+
+#### Language supported:
+>Chinese Traditional (Taiwan, Hong Kong, Macau)
+>English (United States)
