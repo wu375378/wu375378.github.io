@@ -545,6 +545,19 @@ modalCloseElements.forEach((modalCloseElement) => {
   });
   return false;
 });
+
+function Timedate() {
+    const now = new Date();
+    const hours = String(now.getHours()).padStart(2, '0');
+    const minutes = String(now.getMinutes()).padStart(2, '0');
+    const seconds = String(now.getSeconds()).padStart(2, '0');
+    document.getElementById('time').textContent = `${hours}:${minutes}:${seconds}`;
+    document.getElementById('date').textContent = `${now.getDate().toString().padStart(2, '0')}/${(now.getMonth() + 1).toString().padStart(2, '0')}/${now.getFullYear()} ${['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'][now.getDay()]}`;
+    // document.getElementById('week').textContent = `${['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'][now.getDay()]}`;
+}
+
+setInterval(Timedate, 100);
+Timedate();
 /*-- modal close --*/
 
 /*----------------------------------------
