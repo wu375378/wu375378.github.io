@@ -1,0 +1,86 @@
+:root {
+  --color-link-bg: #4b3428;
+  --color-link-text: #ebdc7b;
+}
+.copyright {
+  padding-bottom: 2rem;
+}
+.copyright__text {
+  color: #333;
+  font-weight: bold;
+}
+.annotation {
+  padding-top: 8px;
+}
+.annotation__text {
+  font-weight: bold;
+}
+.link-container {
+  padding-top: 24px;
+}
+.annotation {
+  padding: 0;
+}
+.reservation {
+  background-color: #fff;
+  margin-top: 13px;
+}
+.reservation__link:any-link {
+  color: #7e1b27;
+  font-weight: bold;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1em;
+  text-decoration: none;
+}
+.reservation__link:hover {
+  opacity: 0.8;
+}
+.reservation__link-text {
+  display: inline;
+}
+.shop-to {
+  display: grid;
+  place-items: center;
+  padding-top: 2rem;
+}
+.shop-to__link {
+  background-color: var(--color-link-bg);
+  transition: transform 0.3s;
+  display: grid;
+  place-items: center;
+  font-size: 18px;
+  width: 100%;
+  height: 56px;
+}
+.shop-to__link:any-link {
+  color: var(--color-link-text);
+  font-weight: bold;
+  text-decoration: none;
+}
+.shop-to__link:hover {
+  transform: scale(0.9);
+}
+@media screen and (min-width: 768px) {
+  .copyright {
+    padding-bottom: 3rem;
+  }
+  .reservation__link:any-link {
+    font-size: 20px;
+  }
+  .reservation__link-text {
+    display: block;
+    text-align: center;
+  }
+  .shop-to {
+    padding-top: 4rem;
+  }
+  .shop-to__link {
+    height: 84px;
+    width: 420px;
+    font-size: 24px;
+  }
+}
