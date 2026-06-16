@@ -28,6 +28,18 @@
     --frame-w:0px;
   }
 }
+
+.graveyard-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        .graveyard {
+            display: grid;
+            grid-template-columns: repeat(3, 300px);
+            gap: 40px;
+            padding-bottom: 100px;
+        }
 /* ===============================================
 # SNSカラー
 =============================================== */
