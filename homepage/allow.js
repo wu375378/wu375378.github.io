@@ -1,0 +1,1 @@
+import cors from 'https://skypack.dev'; // For external packages
