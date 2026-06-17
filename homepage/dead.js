@@ -121,12 +121,13 @@ const SHEET_CSV_URL = 'https://docs.google.com/spreadsheets/d/1fNqY7jkBBoXbw5w0E
     
     if (filtered.length === 0) {
         // Option A: Display the message right inside the graveyard container
-        const container = document.getElementById('graveyard-container'); // Replace with your actual container ID
+        const container = document.getElementById('graveyard-container');
         if (container) {
             document.getElementById('notfound').style.display = "flex";
         }
     } else {
         // If there are results, render them normally
+            document.getElementById('notfound').style.display = "none";
         renderGraveyard(filtered);
     }
 }
