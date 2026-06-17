@@ -114,6 +114,7 @@ const SHEET_CSV_URL = 'https://docs.google.com/spreadsheets/d/1fNqY7jkBBoXbw5w0E
         }
 
     function filterGraves() {
+        document.getElementById('notfound').style.display = "none";
     const keyword = document.getElementById('searchInput').value.toLowerCase();
     const filtered = deadPeople.filter(p => 
         p.name.toLowerCase().includes(keyword) || p.id.toLowerCase().includes(keyword)
