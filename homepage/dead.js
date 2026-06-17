@@ -10,6 +10,8 @@ const SHEET_CSV_URL = 'https://docs.google.com/spreadsheets/d/1fNqY7jkBBoXbw5w0E
         let myUUID = "";
         let myIP = "";
 
+        document.getElementById('notfound').style.display = "none";
+
         // 1. initialise identity
         async function initIdentity() {
             // processing uuid
@@ -113,13 +115,23 @@ const SHEET_CSV_URL = 'https://docs.google.com/spreadsheets/d/1fNqY7jkBBoXbw5w0E
             });
         }
 
-        function filterGraves() {
-            const keyword = document.getElementById('searchInput').value.toLowerCase();
-            const filtered = deadPeople.filter(p => 
-                p.name.toLowerCase().includes(keyword) || p.id.toLowerCase().includes(keyword)
-            );
-            renderGraveyard(filtered);
+    function filterGraves() {
+    const keyword = document.getElementById('searchInput').value.toLowerCase();
+    const filtered = deadPeople.filter(p => 
+        p.name.toLowerCase().includes(keyword) || p.id.toLowerCase().includes(keyword)
+    );
+    
+    if (filtered.length === 0) {
+        // Option A: Display the message right inside the graveyard container
+        const container = document.getElementById('graveyard-container'); // Replace with your actual container ID
+        if (container) {
+            document.getElementById('notfound').style.display = "flex";
         }
+    } else {
+        // If there are results, render them normally
+        renderGraveyard(filtered);
+    }
+}
 
         function toggleRegisterForm() {
             const form = document.getElementById('register-form');
