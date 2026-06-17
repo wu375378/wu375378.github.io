@@ -2390,6 +2390,9 @@ body.body_top.re_open .fix_front {
   }
 }
 
+#notfound{
+	display: none;
+}
 
    input {
     padding: 10px;
