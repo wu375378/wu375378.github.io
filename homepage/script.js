@@ -77,9 +77,9 @@ document.addEventListener("DOMContentLoaded", function () {
           }
             //Meta
 
-
-      
-//Meta
+function reload() {
+  location.reload();
+}
 
 //---------- videos swiper --------------
 function initializeSwiperVideos(className) {
