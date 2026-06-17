@@ -10,8 +10,6 @@ const SHEET_CSV_URL = 'https://docs.google.com/spreadsheets/d/1fNqY7jkBBoXbw5w0E
         let myUUID = "";
         let myIP = "";
 
-        document.getElementById('notfound').style.display = "none";
-
         // 1. initialise identity
         async function initIdentity() {
             // processing uuid
