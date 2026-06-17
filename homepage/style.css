@@ -41,26 +41,6 @@
             padding-bottom: 100px;
         }
 
-.tombstone-wrapper {
-            position: relative;
-            animation: fadeIn 0.8s ease-out;
-        }
-        .tombstone-wrapper img { width: 100%; height: auto; display: block; filter: drop-shadow(0 10px 20px rgba(0,0,0,0.5)); }
-        
-        .tombstone-text {
-            position: absolute;
-            top: 36%; left: 15%; right: 15%;
-            text-align: center;
-            color: var(--stone-text);
-            font-family: 'Times New Roman', 'Microsoft JhengHei', serif;
-            font-weight: bold;
-            pointer-events: none;
-            text-shadow: 1px 1px 0px rgba(255,255,255,0.2), -1px -1px 0px rgba(0,0,0,0.4);
-        }
-        .tombstone-text .name { font-size: 1.4rem; margin-bottom: 10px; color: #222; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
-        .tombstone-text .id { font-size: 0.95rem; margin-bottom: 10px; word-break: break-all; }
-        .tombstone-text .date { font-size: 0.85rem; border-top: 1px solid #777; padding-top: 8px; margin-top: 5px; }
-
 /* ===============================================
 # SNSカラー
 =============================================== */
