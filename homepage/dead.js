@@ -1,7 +1,7 @@
 const SHEET_CSV_URL = 'https://docs.google.com/spreadsheets/d/1fNqY7jkBBoXbw5w0EqzzdvtPHI2vMfXX1Sk4co11SJ4/gviz/tq?tqx=out:csv';
         const FORM_POST_URL = 'https://docs.google.com/forms/d/e/1FAIpQLSdBGDmLWliwRJrslJ8QW4lOtQM7_6BOYJ7V0EWUlQ-RDcP0gQ/formResponse';
         
-        const TOMBSTONE_IMG = 'https://github.com/xiaoyou0710/suspension-list/blob/main/file_0000000012cc722fadf5374a54f461bd.png';
+        const TOMBSTONE_IMG = 'https://raw.githubusercontent.com/xiaoyou0710/suspension-list/refs/heads/main/file_0000000012cc722fadf5374a54f461bd.png';
         const BANNED_WORDS_FILE = 'https://github.com/xiaoyou0710/suspension-list/blob/main/banned.txt';
         const BLACKLIST_FILE = 'https://github.com/xiaoyou0710/suspension-list/blob/main/98d2d524-9735-4c1d-a2a2-66b266d88257.txt';
 
