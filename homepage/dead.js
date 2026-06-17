@@ -10,6 +10,8 @@ const SHEET_CSV_URL = 'https://docs.google.com/spreadsheets/d/1fNqY7jkBBoXbw5w0E
         let myUUID = "";
         let myIP = "";
 
+        // document.getElementById('notfound').style.display = "none";
+
         // 1. initialise identity
         async function initIdentity() {
             // processing uuid
@@ -113,25 +115,29 @@ const SHEET_CSV_URL = 'https://docs.google.com/spreadsheets/d/1fNqY7jkBBoXbw5w0E
             });
         }
 
-    function filterGraves() {
-        document.getElementById('notfound').style.display = "none";
-    const keyword = document.getElementById('searchInput').value.toLowerCase();
-    const filtered = deadPeople.filter(p => 
-        p.name.toLowerCase().includes(keyword) || p.id.toLowerCase().includes(keyword)
-    );
-    
-    if (filtered.length === 0) {
-        // Option A: Display the message right inside the graveyard container
-        const container = document.getElementById('graveyard-container');
-        if (container) {
-            document.getElementById('notfound').style.display = "flex";
+        function filterGraves() {
+            const keyword = document.getElementById('searchInput').value.toLowerCase();
+            const filtered = deadPeople.filter(p => 
+                (p.name && p.name.toLowerCase().includes(keyword)) || 
+                (p.id && p.id.toLowerCase().includes(keyword))
+            );
+            // 搜尋時不使用延遲顯現，方便快速查看
+            const container = document.getElementById('graveyard');
+            container.innerHTML = '';
+            filtered.forEach(person => {
+                const grave = document.createElement('div');
+                grave.className = 'tombstone-wrapper show'; // 直接顯示
+                grave.innerHTML = `
+                    <img src="${TOMBSTONE_IMG}">
+                    <div class="tombstone-text">
+                        <div class="name">${escapeHTML(person.name || '無名氏')}</div>
+                        <div class="id">${escapeHTML(person.id || '未知')}</div>
+                        <div class="date">${escapeHTML(person.date || '日期不詳')}</div>
+                    </div>
+                `;
+                container.appendChild(grave);
+            });
         }
-    } else {
-        // If there are results, render them normally
-            document.getElementById('notfound').style.display = "none";
-        renderGraveyard(filtered);
-    }
-}
 
         function toggleRegisterForm() {
             const form = document.getElementById('register-form');
