@@ -1,9 +1,7 @@
 const SHEET_CSV_URL = 'https://docs.google.com/spreadsheets/d/1nXLLXNyaWUA0Xz7wjhltcDuQPAJaVNJbXQjEZ6bmTrg/gviz/tq?tqx=out:csv';
-        const FORM_POST_URL = 'https://docs.google.com/forms/d/e/1FAIpQLSccYROYAPL1BRxGwsrLFc1qWH3KAhKIN2_orCjSZT210xa0pQ/viewform';
-        
-        const TOMBSTONE_IMG = 'https://raw.githubusercontent.com/xiaoyou0710/suspension-list/refs/heads/main/file_0000000012cc722fadf5374a54f461bd.png';
-        const BANNED_WORDS_FILE = 'https://github.com/xiaoyou0710/suspension-list/blob/main/banned.txt';
-        const BLACKLIST_FILE = 'https://github.com/xiaoyou0710/suspension-list/blob/main/98d2d524-9735-4c1d-a2a2-66b266d88257.txt';
+        const FORM_POST_URL = 'https://docs.google.com/forms/d/e/1FAIpQLSccYROYAPL1BRxGwsrLFc1qWH3KAhKIN2_orCjSZT210xa0pQ/formResponse';
+        const BANNED_WORDS_FILE = 'not-allowed-keywords.txt';
+        const BLACKLIST_FILE = 'suspended-device-list.txt';
 
         let deadPeople = [];
         let bannedWords = [];
@@ -41,8 +39,9 @@ const SHEET_CSV_URL = 'https://docs.google.com/spreadsheets/d/1nXLLXNyaWUA0Xz7wj
                     const list = text.split('\n').map(item => item.trim()).filter(item => item);
                     
                     if (list.includes(myUUID) || list.includes(myIP)) {
-                        document.getElementById('main-content').style.display = 'none';
-                        document.getElementById('blocked-screen').style.display = 'flex';
+                            setTimeout(() => {
+                                window.location.href = '../403.html';
+                            }, 1000);
                         return true;
                     }
                 }
@@ -90,6 +89,7 @@ const SHEET_CSV_URL = 'https://docs.google.com/spreadsheets/d/1nXLLXNyaWUA0Xz7wj
                 const cleanData = row.map(val => val.replace(/^"|"$/g, '').replace(/""/g, '"'));
                 result.push({
                     name: cleanData[1] || 'no name',
+                    plat: cleanData[4] || 'unknown platform',
                     id: cleanData[2] || 'unknown id',
                     date: cleanData[3] || 'unknown date'
                 });
@@ -105,10 +105,10 @@ const SHEET_CSV_URL = 'https://docs.google.com/spreadsheets/d/1nXLLXNyaWUA0Xz7wj
                 const grave = document.createElement('div');
                 grave.className = 'tombstone-wrapper';
                 grave.innerHTML = `
-                    <img src="${TOMBSTONE_IMG}" alt="tombstone">
                     <div class="tombstone-text">
                         <div class="name">${escapeHTML(person.name)}</div>
                         <div class="id">${escapeHTML(person.id)}</div>
+                        <div class="platform">${escapeHTML(person.plat)}</div>
                         <div class="date">${escapeHTML(person.date)}</div>
                     </div>
                 `;
@@ -122,17 +122,17 @@ const SHEET_CSV_URL = 'https://docs.google.com/spreadsheets/d/1nXLLXNyaWUA0Xz7wj
                 (p.name && p.name.toLowerCase().includes(keyword)) || 
                 (p.id && p.id.toLowerCase().includes(keyword))
             );
-            // 搜尋時不使用延遲顯現，方便快速查看
+            // no delay required
             const container = document.getElementById('graveyard');
             container.innerHTML = '';
             filtered.forEach(person => {
                 const grave = document.createElement('div');
-                grave.className = 'tombstone-wrapper show'; // 直接顯示
+                grave.className = 'tombstone-wrapper show'; // show directly
                 grave.innerHTML = `
-                    <img src="${TOMBSTONE_IMG}">
                     <div class="tombstone-text">
                         <div class="name">${escapeHTML(person.name || '無名氏')}</div>
                         <div class="id">${escapeHTML(person.id || '未知')}</div>
+                        <div class="plat">${escapeHTML(person.plat) || 'unknown platform'}</div>
                         <div class="date">${escapeHTML(person.date || '日期不詳')}</div>
                     </div>
                 `;
@@ -150,6 +150,7 @@ const SHEET_CSV_URL = 'https://docs.google.com/spreadsheets/d/1nXLLXNyaWUA0Xz7wj
             const name = document.getElementById('entryName').value;
             const id = document.getElementById('entryID').value;
             const date = document.getElementById('entryDate').value;
+            const plat = document.getElementById('entryPlat').value;
             const btn = document.getElementById('submitBtn');
             
             const fullContent = (name + id).toLowerCase();
@@ -169,11 +170,12 @@ const SHEET_CSV_URL = 'https://docs.google.com/spreadsheets/d/1nXLLXNyaWUA0Xz7wj
 
             // send data to the server
             const formData = new URLSearchParams();
-            formData.append('entry.510043352', name);
-            formData.append('entry.1259375546', id);
-            formData.append('entry.1128410849', date);
-            formData.append('entry.1443440662', myUUID);
-            formData.append('entry.766832530', myIP);
+            formData.append('entry.1351756525', name);
+            formData.append('entry.271752185', id);
+            formData.append('entry.1029603241', plat);
+            formData.append('entry.512815938', date);
+            formData.append('entry.1030014164', myUUID);
+            formData.append('entry.1778117062', myIP);
 
             try {
                 await fetch(FORM_POST_URL, {
