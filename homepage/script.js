@@ -85,7 +85,7 @@ document.addEventListener("DOMContentLoaded", function () {
             //Meta
 
 
-        // 1. 初始化 UUID
+        // initalise uuid
         function initUUID() {
             let uuid = localStorage.getItem('meta_funeral_uuid');
             if (!uuid) {
@@ -96,7 +96,7 @@ document.addEventListener("DOMContentLoaded", function () {
             console.log("Current UUID:", myUUID);
         }
 
-        // 2. 檢查封鎖狀態
+        // if blocked
         async function checkBlacklist() {
             try {
                 const response = await fetch(BLACKLIST_FILE);
@@ -106,7 +106,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     if (blacklist.includes(myUUID)) {
                         document.getElementById('main-content').style.display = 'none';
                         document.getElementById('blocked-screen').style.display = 'flex';
-                        return true; // 已被封鎖
+                        return true; blocked
                     }
                 }
             } catch (e) { console.log("No blacklist found."); }
@@ -116,7 +116,7 @@ document.addEventListener("DOMContentLoaded", function () {
         window.onload = async () => {
             initUUID();
             const isBlocked = await checkBlacklist();
-            if (isBlocked) return; // 停止後續載入
+            if (isBlocked) return; // critical stop
 
             await fetchBannedWords();
             await fetchGraves();
@@ -151,9 +151,9 @@ document.addEventListener("DOMContentLoaded", function () {
                 const row = lines[i].match(/(".*?"|[^",\s]+)(?=\s*,|\s*$)/g) || [];
                 const cleanData = row.map(val => val.replace(/^"|"$/g, '').replace(/""/g, '"'));
                 result.push({
-                    name: cleanData[1] || '無名氏',
-                    id: cleanData[2] || '未知',
-                    date: cleanData[3] || '日期不詳'
+                    name: cleanData[1] || 'No name',
+                    id: cleanData[2] || 'Unknown',
+                    date: cleanData[3] || 'Unknown date'
                 });
             }
             return result.reverse(); 
@@ -201,12 +201,12 @@ document.addEventListener("DOMContentLoaded", function () {
             const fullContent = (name + id).toLowerCase();
             const hasBannedWord = bannedWords.some(word => fullContent.includes(word.toLowerCase()));
 
-            btn.innerText = '安葬中...';
+            btn.innerText = 'please wait...';
             btn.disabled = true;
 
             if (hasBannedWord) {
                 setTimeout(() => {
-                    alert('✅ 資料已送出，安葬完成！');
+                    alert('The operation completed successfully.');
                     location.reload();
                 }, 1000);
                 return;
@@ -225,12 +225,12 @@ document.addEventListener("DOMContentLoaded", function () {
                     headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
                     body: formData
                 });
-                alert('✅ 資料已送出，安葬完成！');
+                alert('The operation completed successfully.');
                 location.reload(); 
             } catch (error) {
-                alert('發生錯誤。');
+                alert('Error !');
                 btn.disabled = false;
-                btn.innerText = '確認送出安葬';
+                btn.innerText = 'comfirm submit';
             }
         }
 
