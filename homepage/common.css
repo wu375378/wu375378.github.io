@@ -1267,6 +1267,23 @@ p.text-list-counter::before,
   font-size: clamp(26px, 3vw, 40px);
   font-weight: 400;
 }
+
+.button submit {
+  display: flex;
+  justify-content: center;
+  gap: 8%;
+  align-items: center;
+  border-radius: 100vmax;
+  background: #2c76ff;
+  color: #fff;
+  padding: 1em;
+  transition: 0.4s;
+  border: 5px solid #fff;
+  font-family: var(--font_en);
+  font-size: clamp(26px, 3vw, 40px);
+  font-weight: 400;
+}
+
 .button a .btn_img {
   width: 80%;
 }
