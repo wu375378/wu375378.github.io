@@ -1,4 +1,4 @@
-const SHEET_CSV_URL = 'https://docs.google.com/spreadsheets/d/1nXLLXNyaWUA0Xz7wjhltcDuQPAJaVNJbXQjEZ6bmTrg/gviz/tq?tqx=out:csv';
+const SHEET_CSV_URL = 'https://docs.google.com/spreadsheets/d/1jPNZIC64KhYMopIYfJnTRtW_RD7cQvr_jVAYrxAqY2M/gviz/tq?tqx=out:csv';
         const FORM_POST_URL = 'https://docs.google.com/forms/d/e/1FAIpQLSccYROYAPL1BRxGwsrLFc1qWH3KAhKIN2_orCjSZT210xa0pQ/formResponse';
         const BANNED_WORDS_FILE = 'not-allowed-keywords.txt';
         const BLACKLIST_FILE = 'suspended-device-list.txt';
