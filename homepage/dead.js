@@ -74,9 +74,10 @@ const SHEET_CSV_URL = 'https://docs.google.com/spreadsheets/d/1fNqY7jkBBoXbw5w0E
                 const response = await fetch(SHEET_CSV_URL);
                 const text = await response.text();
                 deadPeople = parseCSV(text);
+                document.getElementById('victim-count').innerText = deadPeople.length;
                 renderGraveyard(deadPeople);
             } catch (e) {
-                document.getElementById('loading').innerText = 'Error obtaining data. Please refresh the page.';
+                document.getElementById('loading').innerText = 'Error loading data. Please refresh page.';
             }
         }
 
